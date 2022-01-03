@@ -7,8 +7,7 @@ logger = logging.getLogger(__name__)
 # Load constants from config file
 filename = "config_beta.json" if os.getenv("BETA") else "config.json"
 logger.info("Loading constants from config file")
-with open(filename) as f:
-    config = json.load(f)
+
 
 TOKEN = config["TOKEN"]
 ON9BOT_TOKEN = config["ON9BOT_TOKEN"]
